@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color: #BB9378;
+    font-family: 'Architects Daughter', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.game {
+    display: inline-flex;
+}
+
+h1 {
+    justify-self: center;
+    align-self: center;
+    color: #854622;
+    padding: 20px;
+}
+
+.game-board {
+    display: grid;
+    width: 700px;
+    height: 700px;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    background-color: #DDBDA4;
+    border-radius: 5px;
+}
+
+.box {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    border: 1px solid #B08267;
+}
+
+.box div {
+    border: 1px solid #b38a6b;
+    border-radius: 5px;
+}
+
+.number-selector {
+    display: grid;
+    width: 80px;
+    height: 700px;
+    grid-template: repeat(9, 1fr) / 1fr;
+    background-color: #DDBDA4;
+    margin: 0px 20px 0px 20px;
+    border-radius: 10px;
+    border: 2px solid #B08267;
+}
+
+.number {
+    border: 1px solid #b38a6b;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    color: #854622;
+}
